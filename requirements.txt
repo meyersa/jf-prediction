@@ -3,4 +3,4 @@ requests
 pandas
 numpy
 scikit-learn
-fasttext
+fasttext-wheel
