@@ -10,9 +10,21 @@ Utilize the watched movie list as a training/eval dataset with IsFavorite being 
 - CriticRating
 - OfficialRating
 - Overview
+- TagLines
 - Genres
+- CommunityRating
+- ProductionYear
+- People
+- Studios
 
-And more, which can be used as features for training. 
+And collections can be added for more context: 
+
+- CollectionName 
+- CollectionSize
+- CollectionAge
+- CollectionOrder
+- FirstInCollection
+- AgeSinceLastMovie
 
 ## Procurement
 
@@ -21,6 +33,8 @@ Data can be loaded from our Jellyfin library, using the [Emby Swagger](https://s
 ## Processing 
 
 Due to the wide variety of data, many types of processing will have to be utilized. 
+
+(FastText, Date, Scalar, Onehot, MLB, Ordinal, Binary)
 
 - Binary values such as IsFavorite, can simply stay as PD bools
 - Date released can be converted to a PD date and then many individual features such as the year, month, weekend, etc. 
